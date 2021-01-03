@@ -11,8 +11,7 @@ setup(
   download_url = 'https://github.com/conceptualio/copydf/archive/0.1.tar.gz',
   keywords = ['CACHE'],
   install_requires = [
-          'ipython',
-          're'
+          'ipython'
       ],
   classifiers = [
       'Development Status :: 4 - Beta',
