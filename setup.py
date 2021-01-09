@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'copydf',
   packages = ['copydf'],
-  version = '0.1',
+  version = '0.1.2',
   license = 'MIT',
   description = 'A simple utility to copy a pandas dataframe to your local clipboard from a hosted instance of jupyter.',
   author = 'conceptual.io',
   author_email = 'admin@conceptual.io',
   url = 'https://github.com/conceptualio',
-  download_url = 'https://github.com/conceptualio/copydf/archive/0.1.tar.gz',
+  download_url = 'https://github.com/conceptualio/copydf/archive/0.1.2.tar.gz',
   keywords = ['CACHE'],
   install_requires = [
           'ipython'
