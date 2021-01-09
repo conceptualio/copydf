@@ -31,4 +31,7 @@ def copyDF( df ):
             }
         };
         copyToClipboard( "%s" );
-        ''' % ( re.sub( r"\s{2,}", "|", df.to_string().replace( "\n", "\\n" ) ).replace( "|", "\t" ) ) )
+        ''' % ( "{}{}".format( 
+                "\t{}\\n".format( "\t".join( [ str( df.columns[ c ] ) for c in range( len( df.columns ) ) ] ) ),
+                "\\n".join( [ "{}\t{}".format( str( df.index[ r ] ), "\t".join( [ str( df.iloc[ r, c ] ) for c in range( len( df.columns ) ) ] ) ) for r in range( len( df ) ) ] )
+            ) ) )
