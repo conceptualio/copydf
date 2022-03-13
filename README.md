@@ -10,7 +10,7 @@ pip install copydf
 ### Usage
 ```py
 from copydf import copyDF
-copyDf( df )
+copyDF( df )
 ```
 
 License
